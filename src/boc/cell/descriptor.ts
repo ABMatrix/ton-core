@@ -32,7 +32,8 @@ export function getRepr(originalBits: BitString, bits: BitString, refs: Cell[], 
     repr[reprCursor++] = getBitsDescriptor(originalBits);
 
     // Write bits
-    bitsToPaddedBuffer(bits).copy(repr, reprCursor);
+    // bitsToPaddedBuffer(bits).copy(repr, reprCursor);
+    repr.set(bitsToPaddedBuffer(bits), reprCursor);
     reprCursor += bitsLen;
 
     // Write refs
