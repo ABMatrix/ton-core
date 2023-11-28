@@ -1,5 +1,5 @@
 {
-  "name": "ton-core",
+  "name": "@safematrix/ton-core",
   "version": "0.53.0",
   "main": "dist/index.js",
   "repository": "https://github.com/ton-core/ton-core.git",
