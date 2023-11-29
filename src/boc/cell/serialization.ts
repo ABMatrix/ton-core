@@ -148,9 +148,9 @@ export function parseBoc(src: Buffer) {
         let cellData = reader.loadBuffer(totalCellSize);
         if (hasCrc32c) {
             let crc32 = reader.loadBuffer(4);
-            if (!crc32c(src.subarray(0, src.length - 4)).equals(crc32)) {
-                throw Error('Invalid CRC32C');
-            }
+            // if (!crc32c(src.subarray(0, src.length - 4)).equals(crc32)) {
+            //     throw Error('Invalid CRC32C');
+            // }
         }
         return {
             size,

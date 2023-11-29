@@ -73,7 +73,7 @@ export class BitBuilder {
             if (this._length + src.length * 8 > this._buffer.length * 8) {
                 throw new Error("BitBuilder overflow");
             }
-            src.copy(this._buffer, this._length / 8);
+            this._buffer.set(src, this._length / 8)
             this._length += src.length * 8;
         } else {
             for (let i = 0; i < src.length; i++) {

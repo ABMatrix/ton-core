@@ -54,7 +54,7 @@ export function getRepr(originalBits: BitString, bits: BitString, refs: Cell[], 
         } else {
             childHash = c.hash(level);
         }
-        childHash.copy(repr, reprCursor);
+        repr.set(childHash, reprCursor)
         reprCursor += 32;
     }
 
