@@ -1,6 +1,6 @@
 {
   "name": "@safematrix/ton-core",
-  "version": "0.54.0",
+  "version": "0.55.0",
   "main": "dist/index.js",
   "repository": "https://github.com/ton-core/ton-core.git",
   "author": "Whales Corp. <developers@whalescorp.com>",
@@ -33,6 +33,7 @@
     "ton-crypto": ">=3.2.0"
   },
   "dependencies": {
+    "buffer": "^6.0.3",
     "symbol.inspect": "1.0.1"
   },
   "publishConfig": {
